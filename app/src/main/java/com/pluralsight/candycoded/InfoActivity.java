@@ -16,7 +16,7 @@ public class InfoActivity extends AppCompatActivity {
 
         Uri uri = Uri.parse("android.resource://com.codeschool.candycoded/" + R.drawable.store_front);
         ImageView candyStoreImageView = findViewById(R.id.image_view_candy_store);
-        Picasso.get().
+        Picasso.with(this).
                 load(uri).
                 into(candyStoreImageView);
 
