@@ -46,18 +46,18 @@ public class DetailActivity extends AppCompatActivity {
                     CandyEntry.COLUMN_NAME_DESC));
 
 
-            TextView textView = (TextView) this.findViewById(R.id.text_view_name);
+            TextView textView = this.findViewById(R.id.text_view_name);
             textView.setText(candyName);
 
-            TextView textViewPrice = (TextView) this.findViewById(R.id.text_view_price);
+            TextView textViewPrice = this.findViewById(R.id.text_view_price);
             textViewPrice.setText(candyPrice);
 
-            TextView textViewDesc = (TextView) this.findViewById(R.id.text_view_desc);
+            TextView textViewDesc = this.findViewById(R.id.text_view_desc);
             textViewDesc.setText(candyDesc);
 
-            ImageView imageView = (ImageView) this.findViewById(
+            ImageView imageView = this.findViewById(
                     R.id.image_view_candy);
-            Picasso.with(this).load(mCandyImageUrl).into(imageView);
+            Picasso.get().load(mCandyImageUrl).into(imageView);
         }
     }
 
